@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container{
+    width: 1000px;
+    margin: 0 auto;
+    height:100%;
+  }
+  /* Style the header */
+  .header {
+    background-color: #4B4B4D;
+    text-align: center;
+    font-size: 35px;
+    height: 120px;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    
+  }
+
+  /* LOGO */
+  .logo{
+      width: 200px;
+      height: 60px;
+      background-color: #D2D3D5;
+      float:left;
+      margin: 30px;
+  }
+
+  /*Icons*/
+  .dot {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotcontainer{
+    float: right;
+    margin-right: 3%;
+    position: relative;
+    top: 25%;
+  }
+
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /*1/3 column*/
+  .column.third {
+    width: 32.65%;
+  }
+
+  .column.twenty {
+    width: 20%;
+  }
+
+  /* Middle column */
+  .column.middle {
+    width: 60%;
+  }
+  
+.column.md{
+    height: 192px;
+    margin-right: 10px;
+}
+
+.column.md:last-child {
+    margin-right: 0px;
+  }
+
+.column.lg{
+    height: 453px;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #4B4B4D;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+  }
+
+  /*Section content*/
+  .section-content{
+    margin-top: 20px;
+  }
+  /* NAV BAR */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+    width: 20%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
